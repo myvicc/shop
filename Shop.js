@@ -31,7 +31,7 @@ export class Shop {
             if (target.matches("button")) {
                 this.clearGoods();
                 this.clearDetails();
-                this.showMessage(target.closest().firstChild());
+                this.showMessage();
             }
         })
 
@@ -63,7 +63,7 @@ export class Shop {
    }
 
    showMessage (good) {
-        alert(`you have bought this ${good}`);
+        alert("you have bought this good");
    }
 
 
